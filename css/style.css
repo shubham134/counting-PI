@@ -1,0 +1,137 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.main {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.header {
+  background-color: #4f4f4f;
+  height: 15vh;
+  display: flex;
+  padding-left: 20px;
+  align-items: center;
+}
+
+.title {
+  color: azure;
+  font-size: 40px;
+  text-decoration: none;
+  font-family: sans-serif;
+  font-variant: small-caps;
+}
+
+.body {
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+}
+
+.nav {
+  width: 350px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+  background-color: #9e9e9e;
+}
+
+.stats {
+  width: 100%;
+  height: 55%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 30px;
+  color: #3f3f3f;
+  font-size: 13px;
+}
+
+.control {
+  width: 100%;
+  height: 45%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+}
+
+#precisionvalue {
+  width: 100px;
+  height: 80px;
+  text-align: center;
+  font-size: 70px;
+  color: #3f3f3f;
+  border: 0;
+  background-color: transparent;
+}
+
+#precisionbar {
+  width: 90%;
+  height: 3px;
+  cursor: pointer;
+}
+
+#render {
+  color: azure;
+  padding: 10px 70px;
+  font-size: 20px;
+  border: 0;
+  background-color: #696969;
+}
+
+#render:hover:enabled {
+  cursor: pointer;
+  background-color: #474747;
+}
+
+.space {
+  width: 100%;
+  display: flex;
+  position: relative;
+  align-items: flex-end;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.pi {
+  position: absolute;
+  top: 20px;
+  font-size: 50px;
+  text-align: center;
+}
+
+.graph {
+  width: 900px;
+  height: 400px;
+  display: flex;
+  align-items: flex-end;
+  position: relative;
+  border-left: 30px solid #3f3f3f;
+}
+
+.box {
+  border-radius: 2px;
+  position: absolute;
+  border: 0;
+}
+
+#box1 {
+  background-color: #4de0a3;
+}
+
+#box2 {
+  background-color: #f88752;
+}
+
+.footer {
+  background-color: #4f4f4f;
+  height: 10vh;
+}

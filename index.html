@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Counting PI</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <div class="main">
+      <div class="header">
+        <div><a class="title" href="index.html">Counting 3.14...</a></div>
+      </div>
+      <div class="body">
+        <div class="nav">
+          <div class="stats">
+            <b style="font-size: 25px;">Box 1:</b><br/>
+            <b>Mass: <b id="m1"></b> unit</b><br/>
+            <b>Velocity: <b id="v1"></b> units/s</b><br/>
+            <hr/><br/>
+            <b style="font-size: 25px;">Box 2:</b><br/>
+            <b>Mass: <b id="m2"></b> units</b><br/>
+            <b>Velocity: <b id="v2"></b> units/s</b><br/>
+            <hr/><br/>
+          </div>
+          <div class="control">
+            <input type="text" id="precisionvalue" disabled />
+            <input type="range" id="precisionbar" min="1" max="6" value="3" />
+            <button id="render">Render</button>
+          </div>
+        </div>
+        <audio id="tickSound">
+          <source src="sound/tick.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+        </audio>
+        <div class="space">
+          <div class="pi">PI = <a id="count"><a>...</div>
+          <div class="graph">
+            <div class="box" id="box1"></div>
+            <div class="box" id="box2"></div>
+          </div>
+        </div>
+      </div>
+      <div class="footer"></div>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="js/box.js"></script>
+    <script src="js/script.js"></script>
+  </body>
+</html>
